@@ -1,0 +1,180 @@
+body,ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("https://cdn.glitch.global/3b0fb0a4-7523-42d2-b3ab-830597b6b3fd/bg.jpg?v=1692944252262"); /* Đường dẫn đến hình ảnh nền */
+  background-size: cover; /* Hiển thị hình ảnh theo kích thước bằng với khung nền */
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-attachment: fixed; /* Giữ hình ảnh cố định khi cuộn trang */
+}
+
+.main-header {
+  background-color: rgba(46, 107, 213, 0.1); /* Màu trắng với opacity 0.5 */
+  backdrop-filter: blur(10px); /* Hiệu ứng làm mờ */
+  color: white;
+  width: 100%;
+  top:0;
+  position: fixed;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-top: 1.5vw;
+  margin-right: 12vw;
+}
+
+.home-logo {
+  margin-top: 0.6vh;
+  margin-right: 45vw;
+  margin-left:0.5vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(236, 6, 6);
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.gamebutton{
+  margin-right:0px;
+}
+
+.button{
+  background-color: #007bff; 
+  color: white; 
+  border-radius: 10px; 
+  padding:10px;
+}
+
+h1 {
+  margin-top: 15vh;
+}
+
+.arrow-box-right {
+  position: fixed;
+  bottom: 16%; /* Điều chỉnh cách xa bottom theo 16% chiều cao màn hình */
+  right: 0; /* Đặt bên phải */
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px; /* Điều chỉnh khoảng cách xung quanh nội dung */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.arrow-box-left {
+  position: fixed;
+  bottom: 16%; /* Điều chỉnh cách xa bottom theo 16% chiều cao màn hình */
+  left: 0; /* Đặt bên phải */
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px; /* Điều chỉnh khoảng cách xung quanh nội dung */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.arrow-icon {
+  width: 40px; /* Điều chỉnh kích thước mũi tên */
+  height: 40px;
+  margin-right: 15px; /* Điều chỉnh khoảng cách giữa mũi tên và chữ */
+}
+
+.arrow-text {
+  margin: 0;
+  font-size: 18px; /* Điều chỉnh kích thước chữ */
+  color: white;
+}
+
+.cacbaidang {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.baidang {
+  margin-right: 40px; /* Khoảng cách giữa các phần tử li */
+  margin-top: 30px;
+  transition: transform 0.2s;
+  justify-content: center;
+}
+
+.hinh {
+  border-radius: 40px;
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.baidang:hover {
+  transform: scale(1.2);
+}
+
+ul li h2 {
+  max-width: 300px;
+  text-align: center;
+  font-size: 24;
+  color: white;
+}
+
+/* Khi màn hình nhỏ hơn hoặc bằng 600px */
+@media (max-width: 600px) {
+  .cacbaidang {
+    display:flex;
+    flex-direction: column; /* Hiển thị theo cột thay vì hàng ngang */
+    align-items: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .arrow-box-right{
+    display:none;
+  }
+  
+  .arrow-box-left{
+    display:none;
+  }
+
+  .baidang {
+    margin-right: 0; /* Bỏ khoảng cách giữa các phần tử li */
+    margin-bottom: 20px; /* Khoảng cách giữa các phần tử li khi hiển thị theo cột */
+  }
+
+  nav ul li {
+    margin-top: 4vw;
+    margin-right: 6vw;
+  }
+  
+  .button{
+    margin-top:1.5px;
+    padding:5px;
+  }
+
+  .home-logo {
+    margin-top: 0;
+    margin-right: 9vw;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+  
+  iframe{
+    width:100%;
+    height:280px;
+  }
+  
+}
+
+
+
