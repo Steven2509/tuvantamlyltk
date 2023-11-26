@@ -26,12 +26,12 @@ nav ul {
 
 nav ul li {
   margin-top: 1.5vw;
-  margin-right: 12vw;
+  margin-right: 10vw;
 }
 
 .home-logo {
   margin-top: 0.6vh;
-  margin-right: 45vw;
+  margin-right: 35vw;
   margin-left:0.5vw;
 }
 
@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .gamebutton{
-  margin-right:0px;
+  margin-right:6px;
 }
 
 .button{
@@ -129,8 +129,8 @@ ul li h2 {
   color: white;
 }
 
-/* Khi màn hình nhỏ hơn hoặc bằng 600px */
-@media (max-width: 600px) {
+/* Khi màn hình nhỏ hơn hoặc bằng 900px */
+@media (max-width: 900px) {
   .cacbaidang {
     display:flex;
     flex-direction: column; /* Hiển thị theo cột thay vì hàng ngang */
@@ -152,21 +152,21 @@ ul li h2 {
 
   nav ul li {
     margin-top: 4vw;
-    margin-right: 6vw;
+    margin-right: 4vw;
   }
   
   .button{
     margin-top:1.5px;
-    padding:5px;
+    padding:1px;
   }
 
   .home-logo {
     margin-top: 0;
-    margin-right: 9vw;
+    margin-right: 5.5vw;
   }
 
   nav ul li a {
-    font-size: 20px;
+    font-size: 16px;
   }
   
   iframe{
@@ -175,6 +175,3 @@ ul li h2 {
   }
   
 }
-
-
-
